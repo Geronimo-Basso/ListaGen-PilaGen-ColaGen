@@ -3,7 +3,6 @@
 #ifndef LISTAENLAZADA_LINKED_LIST_H
 #define LISTAENLAZADA_LINKED_LIST_H
 
-
 template <typename T> class ListaGen {
 protected:
     class  Nodo{
@@ -79,7 +78,7 @@ public:
         return contador;
     }
 
-    void cortame_la_cabeza(){
+    void eliminar_cabeza(){
         Nodo * aux = primero;
         primero = primero->siguiente;
         delete aux;
@@ -121,6 +120,4 @@ public:
     }
 
 };
-
-
 #endif //LISTAENLAZADA_LINKED_LIST_H

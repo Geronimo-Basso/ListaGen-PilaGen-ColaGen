@@ -1,10 +1,6 @@
 #include <iostream>
-
 #ifndef ACTIVIDADGRUPAL_4_PILAGEN_H
 #define ACTIVIDADGRUPAL_4_PILAGEN_H
-
-
-
 template <typename T> class PilaGen {
 protected:
     class  Nodo{
@@ -46,7 +42,7 @@ public:
         return contador;
     }
 
-    void cortame_la_cabeza(){
+    void eliminar_cabeza(){
         Nodo * aux = primero;
         primero = primero->siguiente;
         delete aux;
@@ -62,12 +58,10 @@ public:
                 aux = aux->siguiente;
             }
             T salida = aux->elemento;
-            cortame_la_cabeza();
+            eliminar_cabeza();
             return salida;
         }
     }
 
 };
-
-
 #endif //ACTIVIDADGRUPAL_4_PILAGEN_H

@@ -1,12 +1,6 @@
-//
-// Created by Geronimo Basso on 29/12/22.
-//
 #include "iostream"
-
 #ifndef ACTIVIDADGRUPAL_4_COLAGEN_H
 #define ACTIVIDADGRUPAL_4_COLAGEN_H
-
-
 
 template <typename T> class ColaGen {
 protected:
@@ -64,12 +58,11 @@ public:
         return contador;
     }
 
-    void cortame_la_cabeza(){
+    void eliminar_cabeza(){
         Nodo * aux = primero;
         primero = primero->siguiente;
         delete aux;
     }
-
 
     T pop() {
         Nodo *aux = primero;
@@ -81,13 +74,10 @@ public:
                 aux = aux->siguiente;
             }
             T salida = aux->elemento;
-            cortame_la_cabeza();
+            eliminar_cabeza();
             return salida;
         }
     }
 
 };
-
-
-
 #endif //ACTIVIDADGRUPAL_4_COLAGEN_H
