@@ -75,6 +75,9 @@ public:
                 existe_enlace = false;
             }
         }
+        if (contador !=0){
+            return contador+1;
+        }
         return contador;
     }
 

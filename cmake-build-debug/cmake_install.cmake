@@ -1,4 +1,4 @@
-# Install script for directory: /Users/GeronimoBasso/Desktop/Tercer_Semestre/PEL/Semana-15/ActividadGrupal_4
+# Install script for directory: /Users/jorge/Documents/Universidad/Año Academico 22:23/Ccode/ListaGen-PilaGen-ColaGen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/GeronimoBasso/Desktop/Tercer_Semestre/PEL/Semana-15/ActividadGrupal_4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jorge/Documents/Universidad/Año Academico 22:23/Ccode/ListaGen-PilaGen-ColaGen/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
